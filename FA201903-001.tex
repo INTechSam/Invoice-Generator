@@ -1,0 +1,23 @@
+\input{.input/facture_header.tex}
+
+\def\FactureNum			{201903-001}	% Numéro de facture
+\def\FactureAcquittee	{non}		    % Facture acquittée : oui/non
+\def\FactureLieu	    {Paris}    % Lieu de l'édition de la facture
+\def\FactureObjet	    {Facture pour prestation informatique}  % Objet du document
+% Description de la facture
+\def\FactureDescr	{%
+Réalisation de prestations informatiques pour le compte de XXX.
+}
+
+% Infos Client
+\def\ClientNom{Mon client}	% Nom du client
+\def\ClientAdresse{%					% Adresse du client
+    42 rue de mon client\newline
+    75000 PARIS, France
+}
+\def\DateLivraison{1 Mars 2019}
+
+% Liste des produits facturés : Désignation, quantité, prix unitaire HT
+\AjouterProduit	{Intégration d'un système de facture}		{12}		{42}
+
+\input{.input/facture_footer.tex}
